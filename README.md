@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html labg="en">
+<head>
+<meta chrset="utf-8" />
+<title>Countdown Timer</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="countdown-container">
+    <h1>Countdown to end of today 🎉</h1>
+    <h2>You have ...</h2>
+    <div class="time-container">
+      <p class="time"><span id="hour"></span>hours</p>
+      <p class="time"><span id="min"></span>minutes</p>
+      <p class="time"><span id="sec"></span>seconds</p>
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
