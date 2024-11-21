@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チェックボックス付き表とロゴ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            position: relative; /* ここで親要素にpositionを設定 */
+            height: 100vh; /* ビューポートの高さに合わせる */
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+            height: 400px; /* 表全体の高さを設定 */
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #fbe3d7;
+        }
+        th.checkbox-col, td.checkbox-col {
+            width: 40px; /* チェックボックス列の幅を固定 */
+            text-align: center;
+        }
+        td input[type="text"] {
+            width: 90%;
+            border: none;
+            padding: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        td input[type="text"]:focus {
+            outline: none;
+            background-color: #f0f8ff;
+        }
+        td input[type="checkbox"] {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column; /* テーブルと画像を縦に並べる */
+            gap: 70px;
+        }
+        /* 画像を右下に配置するためのスタイル */
+        .logo {
+            position: absolute;
+            bottom: 150px; /* 画面下から20pxの位置 */
+            right: 120px;  /* 画面右から20pxの位置 */
+            max-width: 200px; /* 画像の最大幅を設定 */
+            height: auto;
+            border: 1px solid #ccc; /* 視覚的な枠線を追加 */
+        }
+        .logo {
+            max-width: 800px; /* ロゴ画像の最大幅を設定 */
+            height: auto;
+            border: 1px solid #ccc; /* 視覚的な枠線を追加 */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 入力可能な表 -->
+        <table>
+            <thead>
+                <tr>
+                    <th class="checkbox-col">✔</th>
+                    <th>チーム</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text" value="ISD"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text" value="クリエイティブ"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                 <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="checkbox-col"><input type="checkbox"></td>
+                    <td><input type="text"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- ロゴ画像 -->
+    <img src="IMG_0490.jpeg" alt="IDMロゴ" class="logo">
+</body>
+</html>
+
